@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Not a Cult - New Videos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Navigation-->
+<div class="sidenav" id="NaCSidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="..\index.html" class="active" style="font-size: 20px;">Home</a>
+  <button class="dropdown-btn">News<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="..\news\latest-news.html">Latest News</a>
+    <a href="#" class="isdisabled">Band News</a>
+    <a href="#" class="isdisabled">Tour News</a>
+  </div>
+  <button class="dropdown-btn">Music Reviews<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="#" class="isdisabled">Tracks</a>
+    <a href="#" class="isdisabled">Albums</a>
+    <a href="..\music-reviews\live-reviews.html">Live Music</a>
+  </div>
+  <button class="dropdown-btn">New Music<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="#" class="isdisabled">New Tracks</a>
+    <a href="..\new-music\new-videos.html">New Videos</a>
+    <a href="#" class="isdisabled">New Albums</a>
+  </div>
+  <a href="..\interviews.html" style="font-size: 20px;">Interviews</a>
+  <button class="dropdown-btn">About<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="..\about\meet-the-team.html">Meet the Team</a>
+    <a href="..\about\contact-us.html">Contact Us</a>
+  </div>
+</div>
+
+<!--Navigation-->
+<div class="jumbotron text-center">
+  <h1>Not A Cult</h1>
+  <p>A Rock & Metal Music Fan Site</p>
+  <breakout>
+    <span id="menu" onclick="openNav()">Menu</span>
+</div>
+<!-- Lightbox-->
+<div id="main">
+  <h1>New Music Videos</h1>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="..\images\new-music\A Day To Remember Resentment.jpeg" onclick="openModal1();currentSlide(1)" class="hover-shadow cursor">
+      <h6>A Day To Remember - Resentment</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\amaranthe 82nd all the way.jpeg" onclick="openModal1();currentSlide(2)" class="hover-shadow cursor">
+      <h6>Amaranthe - 82nd All The Way</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\amon amarth crack the sky.jpeg" onclick="openModal1();currentSlide(3)" class="hover-shadow cursor">
+      <h6>Amon Amarth - Crack The Sky</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\borders damage everything.jpeg" onclick="openModal1();currentSlide(4)" class="hover-shadow cursor">
+      <h6>Borders - Damage Everything</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="..\images\new-music\bowling for soup alexa bliss.jpeg" onclick="openModal2();currentSlide(5)" class="hover-shadow cursor">
+      <h6>Bowling For Soup - Alexa Bliss</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\clutch fortunate son.jpeg" onclick="openModal2();currentSlide(6)" class="hover-shadow cursor">
+      <h6>Clutch - Fortunate Son</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\code orange swallow the rabbit whole.jpeg" onclick="openModal2();currentSlide(7)" class="hover-shadow cursor">
+      <h6>Code Orange - Swallowing The Rabbit Whole</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\danko jones fists up high.jpeg" onclick="openModal2();currentSlide(8)" class="hover-shadow cursor">
+      <h6>Danko Jones - Fists Up High</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="..\images\new-music\enter shikari the dreamers hotel.jpeg" onclick="openModal3();currentSlide(9)" class="hover-shadow cursor">
+      <h6>Enter Shikari - {The Dreamers Hotel}</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\hands off gretel milk.jpeg" onclick="openModal3();currentSlide(10)" class="hover-shadow cursor">
+      <h6>Hands Off Gretel - Milk</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\horizons sickness and death.jpeg" onclick="openModal3();currentSlide(11)" class="hover-shadow cursor">
+      <h6>Horizons - Sickness & Death</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\imonolith dig.jpeg" onclick="openModal3();currentSlide(12)" class="hover-shadow cursor">
+      <h6>Imonolith - Dig</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="..\images\new-music\invisions worlds away.jpeg" onclick="openModal4();currentSlide(13)" class="hover-shadow cursor">
+      <h6>InVisions - Worlds Away</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\jackals backbone dead prey.jpeg" onclick="openModal4();currentSlide(14)" class="hover-shadow cursor">
+      <h6>Jackel's Backbone - Dead Prey</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\jinjer on the top.jpeg" onclick="openModal4();currentSlide(15)" class="hover-shadow cursor">
+      <h6>Jinjer - On The Top</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\killswitch engage I cant be the only one.jpeg" onclick="openModal4();currentSlide(16)" class="hover-shadow cursor">
+      <h6>Killswitch Engage - I Can't Be The Only One</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="..\images\new-music\lacuna coil layers of time.jpeg" onclick="openModal5();currentSlide(17)" class="hover-shadow cursor">
+      <h6>Lacuna Coil - Layers Of Time</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\lamb of god checkmate.jpeg" onclick="openModal5();currentSlide(18)" class="hover-shadow cursor">
+      <h6>Lamb Of God - Checkmate</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\machinehead circle the drain.jpeg" onclick="openModal5();currentSlide(19)" class="hover-shadow cursor">
+      <h6>Machine Head - Circle The Drain</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\saurr twisted.jpeg" onclick="openModal5();currentSlide(20)" class="hover-shadow cursor">
+      <h6>SAURR - Twisted</h6>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="..\images\new-music\skindred thats my jam.jpeg" onclick="openModal6();currentSlide(21)" class="hover-shadow cursor">
+      <h6>Skindred - That's My Jam</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\the amity affliction soak me in bleach.jpeg" onclick="openModal6();currentSlide(22)" class="hover-shadow cursor">
+      <h6>The Amity Affliction - Soak Me In Bleach</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\the lazys half mast blues.jpeg" onclick="openModal6();currentSlide(23)" class="hover-shadow cursor">
+      <h6>The Lazy's - Half Mast Blues</h6>
+    </div>
+    <div class="col-md-3">
+      <img src="..\images\new-music\zebrahead if youre looking for your knife.jpeg" onclick="openModal6();currentSlide(24)" class="hover-shadow cursor">
+      <h6>Zebrahead - If You're Looking For Your Knife...I Think My Back Found It!</h6>
+    </div>
+  </div>
+
+  <div id="Modal1" class="modal">
+    <span class="close cursor" onclick="closeModal1()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1 / 24</div>
+        <video controls autoplay>
+          <source src="..\videos\A Day To Remember Resentment [OFFICIAL VIDEO].mp4" type="video/mp4">
+          <source src="..\videos\A Day To Remember Resentment [OFFICIAL VIDEO].webm" type="video/webm">
+        </video>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 24</div>
+        <video controls autoplay>
+          <source src="..\videos\AMARANTHE - 82nd All The Way (OFFICIAL MUSIC VIDEO).mp4" type="video/mp4">
+          <source src="..\videos\AMARANTHE - 82nd All The Way (OFFICIAL MUSIC VIDEO).webm" type="video/webm">
+        </video>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">3 / 24</div>
+        <video controls autoplay>
+          <source src="..\videos\Amon Amarth - Crack the Sky.mp4" type="video/mp4">
+          <source src="..\videos\Amon Amarth - Crack the Sky.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">4 / 24</div>
+        <video controls autoplay>
+          <source src="..\videos\Borders - Damage Everything (OFFICIAL VIDEO).mp4" type="video/mp4">
+          <source src="..\videos\Borders - Damage Everything (OFFICIAL VIDEO).webm" type="video/webm">
+        </video>
+      </div>
+
+      <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\A Day To Remember Resentment.jpeg" onclick="currentSlide(1)" alt="A Day To Remember - Resentment     Release Date:22nd November 2019">
+        </div>
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\Amaranthe 82nd all the way.jpeg" onclick="currentSlide(2)" alt="Amaranthe - 82nd All The Way     Release Date:3rd January 2020">
+        </div>
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\amon amarth crack the sky.jpeg" onclick="currentSlide(3)" alt="Amon Amarth - Crack the Sky     Release Date:17th April 2019">
+        </div>
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\borders damage everything.jpeg" onclick="currentSlide(4)" alt="Borders - Damage Everything     Release Date:3rd May 2019">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Modal2" class="modal">
+    <span class="close cursor" onclick="closeModal2()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">5 / 24</div>
+        <video controls width="640" height="480" autoplay>
+          <source src="..\videos\Bowling For Soup - Alexa Bliss (Official Video).mp4" type="video/mp4">
+          <source src="..\videos\Bowling For Soup - Alexa Bliss (Official Video).webm" type="video/webm">
+        </video>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 24</div>
+        <video controls width="640" height="480" autoplay>
+          <source src="..\videos\Clutch - Fortunate Son (Official Video).mp4" type="video/mp4">
+          <source src="..\videos\Clutch - Fortunate Son (Official Video).webm" type="video/webm">
+        </video>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">7 / 24</div>
+        <video controls width="640" height="480" autoplay>
+          <source src="..\videos\Code Orange - Swallowing The Rabbit Whole [OFFICIAL VIDEO].mp4" type="video/mp4">
+          <source src="..\videos\Code Orange - Swallowing The Rabbit Whole [OFFICIAL VIDEO].webm" type="video/webm">
+        </video>
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">8 / 24</div>
+        <video controls width="640" height="480" autoplay>
+          <source src="..\videos\Danko Jones - Fists Up High (Official Music Video).mp4" type="video/mp4">
+          <source src="..\videos\Danko Jones - Fists Up High (Official Music Video).webm" type="video/webm">
+        </video>
+      </div>
+
+      <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\bowling for soup alexa bliss.jpeg" onclick="currentSlide(5)" alt="Bowling For Soup - Alexa Bliss     Release Date:7th February 2020">
+        </div>
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\clutch fortunate son.jpeg" onclick="currentSlide(6)" alt="Clutch - Fortunate Son     Release Date:29th November 2019">
+        </div>
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\code orange swallow the rabbit whole.jpeg" onclick="currentSlide(7)" alt="Code Orange - Swallow The Rabbit Whole     Release Date:7th February 2020">
+        </div>
+        <div class="col-md-3">
+          <img class="demo cursor" src="..\images\new-music\danko jones fists up high.jpeg" onclick="currentSlide(8)" alt="Danko Jones - Fists Up High     Release Date:20th September 2019">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="Modal3" class="modal">
+    <span class="close cursor" onclick="closeModal3()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">9 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Enter Shikari - { The Dreamer's Hotel } (Official Video).mp4" type="video/mp4">
+            <source src="..\videos\Enter Shikari - { The Dreamer's Hotel } (Official Video).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">10 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Hands Off Gretel - Milk (Official Music Video).mp4" type="video/mp4">
+            <source src="..\videos\Hands Off Gretel - Milk (Official Music Video).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">11 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Horizons - Sickness & Death [Official Music Video].mp4" type="video/mp4">
+            <source src="..\videos\Horizons - Sickness & Death [Official Music Video].webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">12 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Imonolith - Dig [Official Video].mp4" type="video/mp4">
+            <source src="..\videos\Imonolith - Dig [Official Video].webm" type="video/webm">
+          </video>
+        </div>
+
+        <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+        <div class="row">
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\enter shikari the dreamers hotel.jpeg" onclick="currentSlide(9)" alt="Enter Shikari - {The Dreamer's Hotel}     Release Date:10th February 2020">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\hands off gretel milk.jpeg" onclick="currentSlide(10)" alt="Hands Off Gretel - Milk     Release Date:29th March 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\horizons sickness and death.jpeg" onclick="currentSlide(11)" alt="Horizons - Sickness & Death     Release Date:30th November 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\imonolith dig.jpeg" onclick="currentSlide(12)" alt="Imonolith - Dig     Release Date:7th February 2020">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Modal4" class="modal">
+      <span class="close cursor" onclick="closeModal4()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">13 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\InVisions - Worlds Away (Official Music Video).mp4" type="video/mp4">
+            <source src="..\videos\InVisions - Worlds Away (Official Music Video).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">14 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Jackal's Backbone - Dead Prey Official Video.mp4" type="video/mp4">
+            <source src="..\videos\Jackal's Backbone - Dead Prey Official Video.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">15 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\JINJER - On The Top (Official Video)   Napalm Records.mp4" type="video/mp4">
+            <source src="..\videos\Jinjer - On The Top (Official Video)   Napalm Records.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">16 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Killswitch engage - I can't be the only one.mp4" type="video/mp4">
+            <source src="..\videos\Killswitch engage - I can't be the only one.webm" type="video/webm">
+          </video>
+        </div>
+
+        <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="row">
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\invisions worlds away.jpeg" onclick="currentSlide(13)" alt="InVisions - Worlds Away     Release Date:8th February 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\jackals backbone dead prey.jpeg" onclick="currentSlide(14)" alt="Jackal's Backbone - Dead Prey     Release Date:4th August 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\jinjer on the top.jpeg" onclick="currentSlide(15)" alt="Jinjer - On The Top     Release Date:11th October 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\killswitch engage I cant be the only one.jpeg" onclick="currentSlide(16)" alt="Killswitch Engage - I Can't Be The Only One     Release Date:16th August 2019">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Modal5" class="modal">
+      <span class="close cursor" onclick="closeModal5()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">17 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\LACUNA COIL - Layers Of Time (OFFICIAL VIDEO).mp4" type="video/mp4">
+            <source src="..\videos\LACUNA COIL - Layers Of Time (OFFICIAL VIDEO).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">18 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Lamb of God - Checkmate (Official Music Video).mp4" type="video/mp4">
+            <source src="..\videos\Lamb of God - Checkmate (Official Music Video).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">19 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\MACHINE HEAD - Circle The Drain (OFFICIAL TRACK).mp4" type="video/mp4">
+            <source src="..\videos\MACHINE HEAD - Circle The Drain (OFFICIAL TRACK).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">20 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\SAURR - Twisted (Official Video).mp4" type="video/mp4">
+            <source src="..\videos\SAURR - Twisted (Official Video).webm" type="video/webm">
+          </video>
+        </div>
+
+        <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+
+        <div class="row">
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\lacuna coil layers of time.jpeg" onclick="currentSlide(17)" alt="Lacuna Coil - Layers of Time     Release Date:26th July 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\lamb of god checkmate.jpeg" onclick="currentSlide(18)" alt="Lamb of God - Checkmate     Release Date:6th February 2020">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\machinehead circle the drain.jpeg" onclick="currentSlide(19)" alt="Machine Head - Circle The Drain     Release Date:14th February 2020">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\saurr twisted.jpeg" onclick="currentSlide(20)" alt="Saurr - Twisted     Release Date:29th February 2020">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="Modal6" class="modal">
+      <span class="close cursor" onclick="closeModal6()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">21 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\SKINDRED - That's My Jam (Official Video)   Napalm Records.mp4" type="video/mp4">
+            <source src="..\videos\SKINDRED - That's My Jam (Official Video)   Napalm Records.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">22 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\The Amity Affliction  Soak Me In Bleach  Official Music Video.mp4" type="video/mp4">
+            <source src="..\videos\The Amity Affliction  Soak Me In Bleach Official Music Video.webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">23 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\The Lazys - Half Mast Blues (Official Music Video).mp4" type="video/mp4">
+            <source src="..\videos\The Lazys - Half Mast Blues (Official Music Video).webm" type="video/webm">
+          </video>
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">24 / 24</div>
+          <video controls width="640" height="480" autoplay>
+            <source src="..\videos\Zebrahead - If You're Looking For Your Knife...I Think My Back Found It - (Official Lyric Video).mp4" type="video/mp4">
+            <source src="..\videos\Zebrahead - If You're Looking For Your Knife...I Think My Back Found It - (Official Lyric Video).webm" type="video/webm">
+          </video>
+        </div>
+
+        <a class="prev" onclick="plusSlides6(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides6(1)">&#10095;</a>
+
+        <div class="row">
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\skindred thats my jam.jpeg" onclick="currentSlide(21)" alt="Skindred - That's My Jam     Release Date:17th April 2018">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\the amity affliction soak me in bleach.jpeg" onclick="currentSlide(22)" alt="The Amity Affliction - Soak Me In Bleach     Release Date:8th January 2020">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\the lazys half mast blues.jpeg" onclick="currentSlide(23)" alt="The Lazys - Half Mast Blues     Release Date:27th September 2019">
+          </div>
+          <div class="col-md-3">
+            <img class="demo cursor" src="..\images\new-music\zebrahead if youre looking for your knife.jpeg" onclick="currentSlide(24)" alt="Zebrahead - If You're Looking For Your Knife...I Think My Back Found It     Release Date:8th August 2019">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h3>Footer</h3>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="..\index.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">New Music</a></li>
+      <li class="breadcrumb-item active" aria-current="page">New Music Videos</li>
+    </ol>
+  </nav>
+  <p>Bored? Play a <a href="..\game\breakout.html">game</a></p>
+</footer>
+<foot>
+  <script>
+  /*Loop through all dropdown button to toggle between hiding and showing its dropdown content - This
+  allows the user to have multiple dropdowns without any conflict*/
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++){
+    dropdown[i].addEventListener("click", function(){
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if(dropdownContent.style.display === "block"){
+        dropdownContent.style.display = "none";
+      }else{
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  /*Open the sidebar and move the content accross to allow room for the sidebar*/
+  function openNav(){
+    document.getElementById("NaCSidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  /*Close the sidebar and move content back*/
+  function closeNav(){
+    document.getElementById("NaCSidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+  }
+  /*Modal display and control */
+  function openModal1(){
+    document.getElementById("Modal1").style.display = "block";
+  }
+  function closeModal1(){
+    document.getElementById("Modal1").style.display = "none";
+  }
+  function openModal2(){
+    document.getElementById("Modal2").style.display = "block";
+  }
+  function closeModal2(){
+    document.getElementById("Modal2").style.display = "none";
+  }
+  function openModal3(){
+    document.getElementById("Modal3").style.display = "block";
+  }
+  function closeModal3(){
+    document.getElementById("Modal3").style.display = "none";
+  }
+  function openModal4(){
+    document.getElementById("Modal4").style.display = "block";
+  }
+  function closeModal4(){
+    document.getElementById("Modal4").style.display = "none";
+  }
+  function openModal5(){
+    document.getElementById("Modal5").style.display = "block";
+  }
+  function closeModal5(){
+    document.getElementById("Modal5").style.display = "none";
+  }
+  function openModal6(){
+    document.getElementById("Modal6").style.display = "block";
+  }
+  function closeModal6(){
+    document.getElementById("Modal6").style.display = "none";
+  }
+
+  var slideIndex = "1";
+  showSlides(slideIndex);
+
+  function plusSlides(n){
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n){
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  mybutton = document.getElementById("myBtn");
+
+  window.onscroll = function(){scrollFunction()};
+
+  function scrollFunction(){
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+      mybutton.style.display = "block";
+    } else{
+      mybutton.style.display = "none";
+    }
+  }
+  function topFunction(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+</foot>
+</html>
