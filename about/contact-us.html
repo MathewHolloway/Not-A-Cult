@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Not a Cult - Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="..\style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<!--Navigation-->
+<div class="sidenav" id="NaCSidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="..\index.html" class="active" style="font-size: 20px;">Home</a>
+  <button class="dropdown-btn">News<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="..\news\latest-news.html">Latest News</a>
+    <a href="#" class="isdisabled">Band News</a>
+    <a href="#" class="isdisabled">Tour News</a>
+  </div>
+  <button class="dropdown-btn">Music Reviews<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="#" class="isdisabled">Tracks</a>
+    <a href="#" class="isdisabled">Albums</a>
+    <a href="..\music-reviews\live-reviews.html">Live Music</a>
+  </div>
+  <button class="dropdown-btn">New Music<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="#" class="isdisabled">New Tracks</a>
+    <a href="..\new-music\new-videos.html">New Videos</a>
+    <a href="#" class="isdisabled">New Albums</a>
+  </div>
+  <a href="..\interviews.html" style="font-size: 20px;">Interviews</a>
+  <button class="dropdown-btn">About<i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-container">
+    <a href="..\about\meet-the-team.html">Meet the Team</a>
+    <a href="..\about\contact-us.html">Contact Us</a>
+  </div>
+</div>
+
+<!--Navigation-->
+<div class="main">
+
+<!--Jumbotron Banner-->
+<div class="jumbotron text-center">
+  <h1>Not A Cult</h1>
+  <p>A Rock & Metal Music Fan Site</p>
+  <breakout>
+  <span id="menu" onclick="openNav()">Menu</span>
+</div>
+
+<!-- Contact Form -->
+<div class="container">
+  <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your First Name...">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Surname...">
+    <label for="reason">Reason for Contact</label>
+    <select id="reason" name="reason">
+      <option value="Dunna-booboo">Oops, you done a booboo!</option>
+      <option value="Just-Swell">I think you're doing just swell!</option>
+      <option value="Newband">You need to hear this great new band (i'm not friends with the lead singer, honest!)</option>
+    </select>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" size="300" placeholder="We reeeeeeeaaaaaaally want to know what you've got to say!!!!" style="height:200px"></textarea>
+    <input type="submit" value="Send">
+    <input type="reset" value="Clear">
+  </form>
+  </div>
+  <iframe class="googlemaps" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-2.9505801200866704%2C51.57294213192234%2C-2.932662963867188%2C51.57901642222787&amp;layer=mapnik"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/51.57598/-2.94162">View Larger Map</a></small>
+</div>
+</body>
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+<h3>Footer</h3>
+<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="..\index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">About</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+  </ol>
+</nav>
+<p>Bored? Play a <a href="../game/breakout.html">game</a></p>
+</footer>
+<foot>
+<script>
+/*Loop through all dropdown button to toggle between hiding and showing its dropdown content - This
+allows the user to have multiple dropdowns without any conflict*/
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++){
+  dropdown[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if(dropdownContent.style.display === "block"){
+      dropdownContent.style.display = "none";
+    }else{
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+/*Open the sidebar and move the content accross to allow room for the sidebar*/
+function openNav(){
+  document.getElementById("NaCSidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+/*Close the sidebar and move content back*/
+function closeNav(){
+  document.getElementById("NaCSidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function(){scrollFunction()};
+
+function scrollFunction(){
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30){
+    mybutton.style.display = "block";
+  } else{
+    mybutton.style.display = "none";
+  }
+}
+function topFunction(){
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</foot>
+</html>
